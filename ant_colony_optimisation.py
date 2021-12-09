@@ -150,7 +150,6 @@ if __name__ == "__main__":
         print(
             f"Process finished successfully. Results: \n- Best fitness: {ant_colony.best_fitness} \n- Output: {ant_colony.result_fitness}"
         )
-        print(f'({ant_colony.result_fitness}, {ant_colony.best_fitness})')
     else:
         # Runs 5 trials of ACO and calculates averages.
         results = []
@@ -160,5 +159,5 @@ if __name__ == "__main__":
             ant_colony.run()
             results.append(ant_colony.result_fitness)
             best.append(ant_colony.best_fitness)
-            print(f'({ant_colony.result_fitness}, {ant_colony.best_fitness})')
-        print(f'({sum(results) / len(results)}, {sum(best) / len(best)})')
+            print(f"({ant_colony.result_fitness}, {ant_colony.best_fitness})")
+        print(f"({sum(results) / len(results)}, {sum(best) / len(best)})")
